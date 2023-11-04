@@ -54,12 +54,12 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 
 Let see this tutorials Takuya's blog:
 
-1. [Blogpost](https://dev.to/craftzdog/my-vim-setup-to-speed-up-javascript-coding-for-my-electron-and-react-native-apps-4ebp)
-2. [Blogpost](https://dev.to/craftzdog/a-productive-command-line-git-workflow-for-indie-app-developers-k7d)
+1. [Blogpost - my-vim-setup-to-speed-up-javascript-coding-for-my-electron-and-react-native-apps](https://dev.to/craftzdog/my-vim-setup-to-speed-up-javascript-coding-for-my-electron-and-react-native-apps-4ebp)
+2. [Blogpost - a-productive-command-line-git-workflow-for-indie-app-developers](https://dev.to/craftzdog/a-productive-command-line-git-workflow-for-indie-app-developers-k7d)
 
 ## About me
 
 - [Linkedin](https://www.linkedin.com/in/cuong-cao-ngoc-792992229/)
 - [Github](https://github.com/CaoNgocCuong?tab=repositories)
 - [Facebook](https://www.facebook.com/tony.cuong.39142/)
-- [Gmail](insideee.dev@gmail.com)
+- _Gmail_: `insideee.dev@gmail.com`
