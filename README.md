@@ -11,7 +11,19 @@
 - vim (NeoVim) config
 - tmux config
 - git config
+- karabiner mapping
 - fish config
+
+## Karabiner element application
+
+I use Karabiner to customize some keys for my keyboard to make vim easier for me to use.
+Search in the registry:
+
+- [Vim style escape key mapping](https://ke-complex-modifications.pqrs.org/?q=escape%20to%20ctrl%20%2B%20%5B)
+- [Vim style arrows](https://ke-complex-modifications.pqrs.org/?q=vim%20style%20arrows)
+
+![karabiner screenshot simple](./images/karabiner_simp.png)
+![karabiner screenshot complex](./images/karabiner_complex.png)
 
 ## Neovim setup
 
