@@ -21,8 +21,8 @@ local function on_attach_custom(bufnr)
   vim.keymap.set('n', '?', api.tree.toggle_help)
   vim.keymap.set('n', '<C-p>', api.node.open.preview)
 
-  -- Open
-  vim.keymap.set('n', '<C-n>', api.node.open.tab)
+  -- Open new buffer
+  vim.keymap.set('n', 'T', api.node.open.tab)
 
   -- navigate
   vim.keymap.set('n', '<M-h>', api.node.navigate.parent_close)
