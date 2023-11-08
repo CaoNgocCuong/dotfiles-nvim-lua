@@ -81,7 +81,6 @@ nvim_tree.setup({
 })
 
 vim.keymap.set('n', '<Space>t', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<C-h>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 
 -- Auto close NvimTree when last buffer closed
 vim.api.nvim_create_autocmd("BufEnter", {
