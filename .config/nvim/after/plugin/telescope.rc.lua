@@ -30,6 +30,9 @@ telescope.setup {
         },
         ["n"] = {
           -- your custom normal mode mappings
+          ["o"] = actions.select_drop,
+          ["<C-t>"] = false,          -- Disabled open new tab with C-t mapping
+          ["T"] = actions.select_tab, -- Remap to open file in new tab
           ["N"] = fb_actions.create,
           ["h"] = fb_actions.goto_parent_dir,
           ["/"] = function()

@@ -26,14 +26,25 @@ local function on_attach_custom(bufnr)
 
   -- navigate
   vim.keymap.set('n', '<M-h>', api.node.navigate.parent_close)
+
+  -- changed to current working directory
+  vim.keymap.set('n', 't', function()
+    local node = api.tree.get_node_under_cursor()
+
+    if node and node.type == 'directory' then
+      vim.fn.execute(':cd ' .. vim.fn.fnameescape(node.absolute_path))
+    end
+  end)
 end
 
 nvim_tree.setup({
   on_attach = on_attach_custom,
   disable_netrw = true,
+  reload_on_bufenter = true,
+  sync_root_with_cwd = true,
   update_focused_file = {
     enable = true,
-    update_cwd = true,
+    update_cwd = false,
   },
   renderer = {
     root_folder_modifier = ":t",
