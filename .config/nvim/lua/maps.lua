@@ -38,13 +38,15 @@ keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Move text up and down
-keymap.set('n', '<A-j>', '<Esc>:m .+1<CR>', opts)
-keymap.set('n', '<A-k>', '<Esc>:m .-2<CR>', opts)
-keymap.set('v', '<A-j>', ':m .+1<CR>', opts)
-keymap.set('v', '<A-k>', ':m .-2<CR>', opts)
-keymap.set('x', '<A-j>', ":move '>+1<CR>gv-gv", opts)
-keymap.set('x', '<A-k>', ":move '<-2<CR>gv-gv", opts)
+keymap.set('n', 'J', '<Esc>:m .+1<CR>', opts)
+keymap.set('n', 'K', '<Esc>:m .-2<CR>', opts)
+keymap.set('v', 'J', ':m .+1<CR>', opts)
+keymap.set('v', 'K', ':m .-2<CR>', opts)
+keymap.set('x', 'J', ":move '>+1<CR>gv-gv", opts)
+keymap.set('x', 'K', ":move '<-2<CR>gv-gv", opts)
 
 -- Map a key combination to copy the full relative path to the clipboard
-vim.api.nvim_set_keymap('n', 'Z', [[:lua vim.fn.setreg('+', vim.fn.expand('%:~:.'))<CR>]],
-  { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'Z', [[:lua vim.fn.setreg('+', vim.fn.expand('%:~:.'))<CR>]], opts)
+
+-- Map to open a new tab and switch to the previous buffer in the new tab
+vim.api.nvim_set_keymap('n', '<Leader>t', ':tabnew<CR>:bprev<CR>', opts)
