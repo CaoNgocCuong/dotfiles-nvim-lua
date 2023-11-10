@@ -65,9 +65,9 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme. Use version 5: `fisher install ilancosman/tide@v5`
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Dank Mono.
 
-### My iterm2 configs
+### Iterm2 snapshot configurations
 
-- [iterm2 screenshot](./images/iterm_settings.png)
+![iterm2 screenshot](./images/iterm_settings.png)
 
 ## How to use
 
