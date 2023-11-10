@@ -18,6 +18,8 @@
 
 I use Karabiner to customize some keys for my keyboard to make vim easier for me to use.
 
+To install: `brew install --cask karabiner-elements`
+
 Search in the registry:
 
 - [Vim style escape key mapping](https://ke-complex-modifications.pqrs.org/?q=escape%20to%20ctrl%20%2B%20%5B)
@@ -62,6 +64,10 @@ Requires [Neovim](https://neovim.io/) (>= 0.8)
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme. Use version 5: `fisher install ilancosman/tide@v5`
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Dank Mono.
+
+### My iterm2 configs
+
+- [iterm2 screenshot](./images/iterm_settings.png)
 
 ## How to use
 
