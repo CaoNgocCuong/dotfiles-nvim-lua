@@ -24,8 +24,14 @@ local function on_attach_custom(bufnr)
   -- Open new buffer
   vim.keymap.set('n', 'T', api.node.open.tab)
 
-  -- navigate
-  vim.keymap.set('n', '<M-h>', api.node.navigate.parent_close)
+  -- Close parent buffer
+  vim.keymap.set('n', ';', function()
+    if vim.bo.filetype == 'NvimTree' then
+      api.node.navigate.parent_close()
+    else
+      -- Perform your custom here in non-NvimTree
+    end
+  end)
 
   -- changed to current working directory
   vim.keymap.set('n', 't', function()
