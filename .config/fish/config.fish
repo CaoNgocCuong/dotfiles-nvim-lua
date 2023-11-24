@@ -1,10 +1,38 @@
 if status is-interactive
     # Run home brew
-    set -gx PATH "/opt/homebrew/bin" $PATH
+    set -gx PATH /opt/homebrew/bin $PATH
 
     set -x NVM_DIR ~/.local/share/nvm
     set -x NODE_VERSION v14.21.3
     set -x PATH $NVM_DIR/$NODE_VERSION/bin $PATH
+
+    set fish_greeting ""
+
+    set -gx TERM xterm-256color
+
+    # aliases
+    alias ls "ls -p -G"
+    alias la "ls -A"
+    alias ll "ls -l"
+    alias lla "ll -A"
+    alias g git
+    command -qv nvim && alias vim nvim
+
+    set -gx EDITOR nvim
+
+    set -gx PATH bin $PATH
+    set -gx PATH ~/bin $PATH
+    set -gx PATH ~/.local/bin $PATH
+
+    # NVM
+    function __check_rvm --on-variable PWD --description 'Do nvm stuff'
+        status --is-command-substitution; and return
+
+        if test -f .nvmrc; and test -r .nvmrc
+            nvm use
+        else
+        end
+    end
 
     # Commands to run in interactive sessions can go here
     set -g theme_display_git no
@@ -47,4 +75,13 @@ if status is-interactive
     set -g theme_project_dir_length 1
     set -g theme_newline_cursor yes
     set -g theme_newline_prompt '$ '
+
+    switch (uname)
+        case Darwin
+            source (dirname (status --current-filename))/config-osx.fish
+        case Linux
+            source (dirname (status --current-filename))/config-linux.fish
+        case '*'
+            source (dirname (status --current-filename))/config-windows.fish
+    end
 end
