@@ -56,6 +56,46 @@ Search in the registry:
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Dank Mono.
 - [Eza](https://github.com/eza-community/eza) - `ls` replacement.
 
+## Enable `undercurl` in iterm2 step by step:
+
+1. First thing first, export your TERM on your _~/.zshrc_.
+   > Source your .zshrc is necessary.
+
+```
+  export TERM="xterm-256color"
+  [[ -n $TMUX ]] && export TERM="screen-256color"
+```
+
+2. Your .vimrc or init.lua or maybe in ~/.config/nvim/lua/config/options.lua like my config need to add these two options.
+
+```
+  vim.opt.spell = true
+  vim.opt.spelllang = { 'en_us' }
+```
+
+3. Next, use _infocmp_ to generate terminal description:  
+   Open a terminal and run the following command in fish:
+
+```
+  infocmp > /tmp/$TERM.ti
+```
+
+4. Edit the terminal description file:  
+   Open the file `/tmp/$TERM.ti` in a text editor. Find the line that contains smul=\E[4m, and add a new line after it:
+
+```
+ smul=\E[4m,
+ Smulx=\E[4:%p1%dm,
+```
+
+Save the changes and close the file. 5. Compile the modified terminal description:
+
+```
+ tic -x /tmp/$TERM.ti
+```
+
+6. Restart your terminal.
+
 ### Iterm2 snapshot configurations
 
 ![iterm2 screenshot](./images/iterm_settings.png)

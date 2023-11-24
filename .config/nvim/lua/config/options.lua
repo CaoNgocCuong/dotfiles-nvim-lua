@@ -6,6 +6,9 @@ vim.opt.fileencoding = "utf-8"
 
 vim.opt.number = true
 
+vim.opt.spell = true
+vim.opt.spelllang = { "en_us" }
+
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -44,5 +47,5 @@ vim.cmd([[au BufNewFile,BufRead *.astro setf astro]])
 vim.cmd([[au BufNewFile,BufRead Podfile setf ruby]])
 
 if vim.fn.has("nvim-0.8") == 1 then
-  vim.opt.cmdheight = 0
+	vim.opt.cmdheight = 0
 end
