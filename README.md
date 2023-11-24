@@ -99,7 +99,7 @@ Save the changes and close the file. 5. Compile the modified terminal descriptio
 
 ### Iterm2 snapshot configurations
 
-![iterm2 screenshot](./images/iterm_settings.jpg)
+![iterm2 screenshot](./images/iterm_settings.png)
 
 ## How to use
 
