@@ -51,9 +51,10 @@ Search in the registry:
 ## Shell setup (macOS & Linux)
 
 - [Fish shell](https://fishshell.com/)
-- [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
+- [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager.
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme. Use version 5: `fisher install ilancosman/tide@v5`
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Dank Mono.
+- [Eza](https://github.com/eza-community/eza) - `ls` replacement.
 
 ### Iterm2 snapshot configurations
 
