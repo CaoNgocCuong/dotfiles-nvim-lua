@@ -1,6 +1,6 @@
-![fish screenshot](./images/view_terminal.png)
+![fish screenshot](./images/view-terminal.jpg)
 
-![nvim screenshot](./images/test_react_project.png)
+![nvim screenshot](./images/test-project-tsx.jpg)
 
 # insideee.dev's dotfiles
 
@@ -59,14 +59,14 @@ Search in the registry:
 ## Enable `undercurl` in iterm2 step by step:
 
 1. First thing first, export your TERM on your _~/.zshrc_.
-   > Source your .zshrc is necessary.
+   > Source your ~/.zshrc is necessary.
 
 ```
   export TERM="xterm-256color"
   [[ -n $TMUX ]] && export TERM="screen-256color"
 ```
 
-2. Your .vimrc or init.lua or maybe in ~/.config/nvim/lua/config/options.lua like my config need to add these two options.
+2. Your `.vimrc` or `init.lua` or maybe in `~/.config/nvim/lua/config/options.lua` like my config need to add these two options.
 
 ```
   vim.opt.spell = true
@@ -95,10 +95,11 @@ Save the changes and close the file. 5. Compile the modified terminal descriptio
 ```
 
 6. Restart your terminal.
+   ![Result undercurl](./images/show-undercurl.jpg)
 
 ### Iterm2 snapshot configurations
 
-![iterm2 screenshot](./images/iterm_settings.png)
+![iterm2 screenshot](./images/iterm_settings.jpg)
 
 ## How to use
 
