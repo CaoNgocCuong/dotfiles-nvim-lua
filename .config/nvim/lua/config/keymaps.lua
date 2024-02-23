@@ -58,11 +58,20 @@ keymap.set("n", "<Leader>5", "<Cmd>BufferLineGoToBuffer 5<CR>", {})
 keymap.set("n", "<Leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>", {})
 keymap.set("n", "<Leader>9", "<Cmd>BufferLineGoToBuffer -1<CR>", {})
 
+-- Moving text
+-- Move text up and down
+keymap.set("n", "<C-Down>", "<Esc>:m .+1<CR>", opts)
+keymap.set("n", "<C-Up>", "<Esc>:m .-2<CR>", opts)
+keymap.set("v", "<C-Down>", ":m .+1<CR>", opts)
+keymap.set("v", "<C-Up>", ":m .-2<CR>", opts)
+keymap.set("x", "<C-Down>", ":move '>+1<CR>gv-gv", opts)
+keymap.set("x", "<C-Up>", ":move '<-2<CR>gv-gv", opts)
+
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
+	vim.diagnostic.goto_next()
 end, opts)
 
 keymap.set("n", "<leader>r", function()
-  require("insideee-dev.utils").replaceHexWithHSL()
+	require("insideee-dev.utils").replaceHexWithHSL()
 end)
