@@ -105,8 +105,9 @@ return {
 				menu = {
 					border = "rounded",
 					draw = {
+						gap = 2,
 						treesitter = { "lsp" },
-						columns = { { "label", "label_description", gap = 1 }, { "kind_icon", "kind" } },
+						columns = { { "kind_icon", "kind" }, { "label", "label_description", gap = 1 } },
 					},
 					winblend = 0,
 				},
