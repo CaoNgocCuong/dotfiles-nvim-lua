@@ -1,0 +1,8 @@
+/nix/
+/System/
+/Library/
+/private/
+/usr/
+/Users/caongoccuong/Library/*
+/Users/caongoccuong/!/Library/CloudStorage/
+/Users/caongoccuong/**/*.photoslibrary/
