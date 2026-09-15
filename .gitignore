@@ -104,6 +104,7 @@ Pods/
 .config/herdr/release-notes.json
 .config/herdr/plugins.json
 .config/herdr/.plugins.lock
+.config/herdr/.config.toml.lock
 .config/herdr/config.toml.bak-*
 # Plugin clones/state are runtime, but plugins/config/ holds hand-written
 # per-plugin config (e.g. git-hub's menu.conf) worth tracking. gitignore
@@ -132,6 +133,9 @@ Pods/
 
 # Lazygit
 .config/lazygit/state.yml
+
+# Mole runtime-generated cleanup list
+.config/mole/clean-list.txt
 
 # Zed
 .config/zed/.tmp*
