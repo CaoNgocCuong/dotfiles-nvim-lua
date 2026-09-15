@@ -40,6 +40,22 @@ return {
 				},
 			}
 
+			opts.views = opts.views or {}
+			opts.views.lsp_progress = {
+				view = "mini",
+				position = {
+					row = 1,
+					col = "100%",
+				},
+				border = {
+					style = "rounded",
+					padding = { 0, 1 },
+				},
+			}
+			opts.lsp = opts.lsp or {}
+			opts.lsp.progress = opts.lsp.progress or {}
+			opts.lsp.progress.view = "lsp_progress"
+
 			vim.api.nvim_create_autocmd("FileType", {
 				pattern = "markdown",
 				callback = function(event)
