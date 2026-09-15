@@ -510,27 +510,23 @@ return {
 			dashboard = {
 				preset = {
 					header = [[
-            ddddddd                                           
-            d:::::d                                           
-            d:::::d                                           
-            d:::::d                                           
-            d:::::d                                            
-    ddddddddd:::::d     eeeeeeeeeeee  vvvvvvv           vvvvvvv
-  dd::::::::::::::d   ee::::::::::::ee v:::::v         v:::::v 
- d::::::::::::::::d  e::::::eeeee:::::eev:::::v       v:::::v  
-d:::::::ddddd:::::d e::::::e     e:::::e v:::::v     v:::::v   
-d::::::d    d:::::d e:::::::eeeee::::::e  v:::::v   v:::::v    
-d:::::d     d:::::d e:::::::::::::::::e    v:::::v v:::::v     
-d:::::d     d:::::d e::::::eeeeeeeeeee      v:::::v:::::v      
-d:::::d     d:::::d e:::::::e                v:::::::::v       
-d::::::ddddd::::::dde::::::::e                v:::::::v        
- d::::::::::::::::d e::::::::eeeeeeee         v:::::v         
-  d:::::::::ddd::::d  ee:::::::::::::e          v:::v          
-   ddddddddd   ddddd    eeeeeeeeeeeeee           vvv           
-                                                               
-                                                               
-                                                               
-          ]],
+╭ · · · · · · · · · · · · · · · · · · · · · · · ╮
+·                                               ·
+·                < c j s / >                    ·
+·                                               ·
+·                    ╭───────────────────────╮  ·
+·                    │ psst... ship happens. │  ·
+·                    ╰───────────╲───────────╯  ·
+·                               ╱  ◉ ◉          ·
+·                              ╱    ᴗ           ·
+·                          ───╱────┬──╼         ·
+·                            ╱     │            ·
+·                                 ╱ ╲           ·
+·                                               ·
+·          fig. nvim · the slash is shipping    ·
+·                                               ·
+╰ · · · · · · · · · · · · · · · · · · · · · · · ╯
+]],
 				},
 				highlight = {
 					header = "DashboardHeader",
