@@ -11,8 +11,8 @@ background-blur-radius = 50
 window-padding-x = 10
 window-padding-y = 10
 
-font-family = "PlemolJP Console NF"
-font-size = 15
+font-family = "BlexMono Nerd Font, FiraCode Nerd Font Mono, PlemolJP Console NF"
+font-size = 14
 
 macos-option-as-alt = left
 cursor-style = block
